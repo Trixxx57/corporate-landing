@@ -4,9 +4,19 @@
   font-weight: lighter;
   font-style: normal;
 }
+.Exo-thin {
+  font-family: 'Exo';
+  font-weight: lighter;
+  font-style: normal;
+}
 @font-face {
   font-family: 'Exo';
   src: url('../fonts/Exo-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.Exo-regular {
+  font-family: 'Exo';
   font-weight: normal;
   font-style: normal;
 }
@@ -16,9 +26,19 @@
   font-weight: bolder;
   font-style: normal;
 }
+.Exo-bolder {
+  font-family: 'Exo';
+  font-weight: bolder;
+  font-style: normal;
+}
 @font-face {
   font-family: 'Exo';
   src: url('../fonts/Exo-Regular.otf') format('opentype');
+  font-weight: italic;
+  font-style: normal;
+}
+.Exo-italic {
+  font-family: 'Exo';
   font-weight: italic;
   font-style: normal;
 }
@@ -27,4 +47,64 @@
   src: url('../fonts/Lato-Regular.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
+}
+.Lato {
+  font-family: 'Exo';
+  font-weight: normal;
+  font-style: normal;
+}
+.OUTR {
+  outline: 2px solid red;
+}
+.OUTG {
+  outline: 2px solid green;
+}
+.OUTB {
+  outline: 2px solid blue;
+}
+.OUTY {
+  outline: 2px solid yellow;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 1440px;
+  min-height: 813px;
+  background-image: url("../image/header-background.jpg");
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 123px;
+}
+.header__h1 {
+  display: block;
+  font-family: 'Exo';
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 75px;
+  margin-bottom: 60px;
+}
+.header__a {
+  margin-bottom: 40px;
+}
+.header__button {
+  margin-bottom: 20px;
 }
