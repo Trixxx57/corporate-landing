@@ -1,55 +1,45 @@
 @font-face {
-  font-family: 'Exo';
+  font-family: 'Exo-thin';
   src: url('../fonts/Exo-Thin.otf') format('opentype');
-  font-weight: lighter;
-  font-style: normal;
 }
 .Exo-thin {
-  font-family: 'Exo';
+  font-family: 'Exo-thin';
   font-weight: lighter;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Exo';
+  font-family: 'Exo-regular';
   src: url('../fonts/Exo-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
 }
 .Exo-regular {
-  font-family: 'Exo';
+  font-family: 'Exo-regular';
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Exo';
+  font-family: 'Exo-medium';
   src: url('../fonts/Exo-Medium.otf') format('opentype');
-  font-weight: bolder;
-  font-style: normal;
 }
-.Exo-bolder {
-  font-family: 'Exo';
+.Exo-medium {
+  font-family: 'Exo-medium';
   font-weight: bolder;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Exo';
+  font-family: 'Exo-italic';
   src: url('../fonts/Exo-Regular.otf') format('opentype');
-  font-weight: italic;
-  font-style: normal;
 }
 .Exo-italic {
-  font-family: 'Exo';
-  font-weight: italic;
-  font-style: normal;
+  font-family: 'Exo-italic';
+  font-weight: normal;
+  font-style: italic;
 }
 @font-face {
   font-family: 'Lato';
   src: url('../fonts/Lato-Regular.ttf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
 }
 .Lato {
-  font-family: 'Exo';
+  font-family: 'Lato';
   font-weight: normal;
   font-style: normal;
 }
@@ -91,28 +81,62 @@ body {
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 123px;
+  padding-top: 220px;
 }
 .header__h1 {
   display: block;
-  font-family: 'Exo';
+  font-family: 'Exo-thin';
   font-weight: lighter;
   font-style: normal;
   font-size: 60px;
   line-height: 75px;
-  margin-bottom: 60px;
-}
-.header__a {
+  letter-spacing: 0.04em;
+  text-align: center;
+  width: 750px;
   margin-bottom: 40px;
 }
+.header__a {
+  display: block;
+  width: 59px;
+  height: 59px;
+  margin-bottom: 36px;
+  background-image: url("../image/header-play.svg");
+}
 .header__button {
-  margin-bottom: 20px;
+  width: 195px;
+  min-height: 50px;
+  background-color: #ff6d6d;
+  font-family: 'Exo-regular';
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  color: white;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+.header_note {
+  font-family: 'Exo-italic';
+  font-weight: normal;
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-align: center;
 }
 .design {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 1440px;
   min-height: 724px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 670px;
+  padding-left: 150px;
+  padding-top: 194px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,6 +144,65 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.design__first-p {
+  font-family: 'Exo-medium';
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0.2;
+  color: #ff6d6d;
+  width: 140px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.design__h2 {
+  width: 555px;
+  font-family: 'Exo-medium';
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin-bottom: 60px;
+}
+.design__h2 span {
+  color: #ff6d6d;
+}
+.design__other-p {
+  font-family: 'Exo-regular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.design__other-p:nth-of-type(2) {
+  margin-bottom: 44px;
+}
+.design__grey-box {
+  position: absolute;
+  width: 570px;
+  height: 245px;
+  background-color: #ececec;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.design__GRbox {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  border-right: 285px solid #fb8686;
+  border-left: 285px solid #ececec;
+  border-top: 296px solid #ececec;
+  border-bottom: 296px solid #fb8686;
 }
 .features {
   width: 1440px;
