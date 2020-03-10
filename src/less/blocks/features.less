@@ -1,13 +1,95 @@
 .features {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
   width: @main-width;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 130px;
   display: flex;
   flex-direction: column;
   min-height: 675px;
+  background-image: url('../image/features-background.jpg');
+  background-repeat: no-repeat;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 213px;
+    height: 279px;
+    // background-color: @light-grey;
+    background-image: url('../image/features-earphones-3.png');
+    background-repeat: no-repeat;
+    top: -20px;
+    right: 170px;
+  }
 }
 
 .fearures__in {
   display: flex;
   flex-direction: row;
+}
+
+.features__first-p {
+  margin-bottom: 24px;
+  .Exo-medium;
+  font-size: 16px;
+  letter-spacing: 0.2;
+  color: @red;
+  width: 140px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.features__h2 {
+  margin-bottom: 90px;
+  .Exo-medium;
+  font-size: 40px;
+  line-height: 50px;  
+  letter-spacing: 0.04em;
+}
+
+.features__internal {
+  position: relative;
+  width: 375px;
+  min-height: 220px;
+  padding-top: 100px;
+  box-sizing: border-box;
+  &:nth-of-type(1)::after {
+    background-image: url('../image/feature-1.png');
+  }
+  &:nth-of-type(2)::after {
+    background-image: url('../image/feature-2.png');
+  }
+  &:nth-of-type(3)::after {
+    background-image: url('../image/feature-3.png');
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 67px;
+    height: 67px;    
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;    
+  }
+}
+
+.features__h3 {
+  margin-bottom: 22px;
+  text-align: center;
+  .Exo-medium;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+
+}
+
+.features__p {
+  text-align: center;
+  .Exo-regular;
+  font-size: 16px;
+  line-height: 26px;  
+  letter-spacing: 0.04em;
 }
