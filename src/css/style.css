@@ -396,9 +396,15 @@ body {
 }
 .founder {
   width: 1440px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-height: 650px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 135px;
+  padding-right: 135px;
+  padding-top: 110px;
+  padding-bottom: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,6 +412,74 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #000000;
+  background-image: url('../image/founder-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.founder__cards {
+  min-height: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.founder__card {
+  position: relative;
+  width: 360px;
+  min-height: 300px;
+  padding-top: 108px;
+}
+.founder__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 76px;
+  height: 76px;
+  background-color: #4e4e5e;
+}
+.founder__h4 {
+  font-family: 'Exo-medium';
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 50px;
+  letter-spacing: 0.04em;
+  color: white;
+  width: inherit;
+  text-align: center;
+}
+.founder__note {
+  font-family: 'Exo-medium';
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 50px;
+  color: #ff6d6d;
+  width: inherit;
+  text-align: center;
+}
+.founder__p {
+  font-family: 'Exo-medium';
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: white;
+  width: inherit;
+  text-align: center;
 }
 .awesome {
   width: 1440px;
