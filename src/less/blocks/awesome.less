@@ -1,8 +1,47 @@
 .awesome {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   width: @main-width;
   min-height: 757px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 110px;
   display: flex;
   flex-direction: column;
+  background-color: @light-grey;
+}
+
+.awesome__first-p {
+  .Exo-medium;
+  font-size: 16px;
+  letter-spacing: 0.2;
+  color: @red;
+  width: 140px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.awesome__h2 {
+  .Exo-medium;
+  font-size: 40px;
+  line-height: 50px;  
+  letter-spacing: 0.04em;
+  text-align: center;
+  width: 460px;
+  margin-bottom: 50px;
+  span {
+    color: @red;
+  }
+}
+
+.awesome__other-p {
+  .Exo-regular;
+  font-size: 16px;
+  line-height: 26px;  
+  letter-spacing: 0.04em;
+  text-align: center;
+  width: 500px;
+  margin-bottom: 80px;
 }
