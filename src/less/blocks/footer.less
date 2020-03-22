@@ -1,85 +1,233 @@
 .footer {
+  position: relative;
   width: @main-width;
   min-height: 333px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: row;
+  justify-content: start;
+  padding-left: 155px;
+  padding-right: 135px;
+  padding-top: 95px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  li {
+    list-style-type: none;
+  }
 }
 
 .footer__first-block {
+  width: 263px;
+  margin-right: 30px;
 
 }
 
 .footer__first-block--h4 {
+  position: relative;
+  .Lato;
+  font-size: 27px;
+  color: @black;
+  // margin-bottom: 25px;
+  min-height: 47px;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 42px;
+    height: 47px;
+    background-image: url('../image/Start Ex.png');
+    left: 60px;
+    top: -4px;
+  }
 
 }
 
 .footer__first-block--p {
+  .Exo-medium;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: @middle-grey;
 
 }
 
 
 
 .footer__support {
+  width: 165px;
+  margin-right: 30px;
+}
+
+.footer__support--h4 {
+  min-height: 47px;
+  .Exo-medium;
+  font-size: 22px;  
+  letter-spacing: 0.04em;
+  color: @black;
+  // margin-bottom: 25px;
 
 }
 
 .footer__support--next {
-
+  .Exo-medium;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: @middle-grey;
+  margin-bottom: 5px;
 } 
 
 
 
 .footer__about {
-
+  width: 165px;
+  margin-right: 30px;
 }
 
 .footer__about--h4 {
-
+  min-height: 47px;
+  .Exo-medium;
+  font-size: 22px;  
+  letter-spacing: 0.04em;
+  color: @black;
+  // margin-bottom: 25px;
 }
 
 .footer__about--next {
-
+  .Exo-medium;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: @middle-grey;
+  margin-bottom: 5px;
 }
 
 
 
 .footer__email {
-
+  width: 270px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
 }
 
 .footer__email--h4 {
-
+  min-height: 47px;
+  .Exo-medium;
+  font-size: 22px;  
+  letter-spacing: 0.04em;
+  color: @black;
+  // margin-bottom: 25px;
 }
 
 .footer__email--form {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+
 
 
   input {
+    width: 220px;
+    height: 50px;
+    background-color: @email-background;
+    border: none;
+    box-sizing: border-box;
+    padding-left: 33px;
+    padding-top: 18px;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+    .Exo-medium;
+      font-size: 16px;
+      line-height: 16px;  
+      letter-spacing: 0.04em;
+      color: @middle-grey;
+    &::placeholder {
+      .Exo-medium;
+      font-size: 16px;
+      line-height: 16px;  
+      letter-spacing: 0.04em;
+      color: @middle-grey;
+      padding-left: 33px;
+      padding-top: 18px;
+      padding-bottom: 16px;
+    }
 
   }
   button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: @red;
+    cursor: pointer;
+    &::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-image: url('../image/footer-arrow.png');
+    background-repeat: no-repeat;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%; -50%);
+    box-sizing: border-box;
+    }
 
   }
 }
 
 .footer__social {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  width: 162px;
+  justify-content: space-between;
+  align-items: center;
+
 
 }
 
 .footer__ball {
-
+  width: 20px;
+  height: 21px;
+  background-image: url('../image/footer-ball.png');
+  background-repeat: no-repeat;
 }
 
 .footer__facebook {
-
+  width: 11px;
+  height: 21px;
+  background-image: url('../image/footer-facebook.png');
+  background-repeat: no-repeat;
 }
 
 .footer__google {
-
+  width: 20px;
+  height: 17px;
+  background-image: url('../image/footer-google.png');
+  background-repeat: no-repeat;
 }
 
 .footer__twitter {
-  
+  width: 19px;
+  height: 17px;
+  background-image: url('../image/footer-twitter.png');
+  background-repeat: no-repeat;
+}
+
+
+.footer__triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 165px solid #ffffff;
+  border-right: 165px solid @red;
+  border-bottom: 175px solid #ffffff;
+  border-top: 175px solid @red;
+  z-index: -1;
 }
